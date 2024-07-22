@@ -10,7 +10,7 @@ const Home = () => {
             </div>
             <div className="description-container">
                 <h1>TADI SANDEEP RISHI,</h1>
-                <h2>FULL STACK WEB DEVELOPER</h2>
+                <h2>       -FULL STACK WEB DEVELOPER</h2>
                 <p>
                     I am a B.Tech final year Computer Science Engineering student specialized in AIML, good at problem-solving.
                 </p>
