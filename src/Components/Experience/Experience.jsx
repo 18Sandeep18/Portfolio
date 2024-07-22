@@ -54,9 +54,11 @@ const Projects = () => {
   const [activeProject, setActiveProject] = useState(projects[0]);
 
   useEffect(() => {
+
     const buttons = document.querySelectorAll('.sidebar button');
+    const mobile = window.minWidth <= 700
     buttons.forEach((button, index) => {
-      if (index != 0 && index != buttons.length - 1) {
+      if (mobile && index != 0 && index != buttons.length - 1) {
         button.addEventListener('click', function() {
           this.scrollIntoView({
             behavior: 'smooth',
