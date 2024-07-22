@@ -12,7 +12,7 @@ import { BrowserRouter as Router } from 'react-router-dom'
 
 const App = () => {
   return (
-    <Router basename="/Portfolio">
+    <Router basename="https://18sandeep18.github.io/Portfolio">
     <div>
       <Navbar/>
       <Hero/>
