@@ -242,7 +242,6 @@
     font-size: 12px;
   }
 }
-
 @media (max-width: 480px) {
   .description-title {
     font-size: 0.9rem;
@@ -261,12 +260,21 @@
     width: 80%;
   }
 
+  .sidebar {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping to ensure single row */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+    padding: 0; /* Remove any default padding */
+    margin: 0; /* Remove any default margin */
+  }
+
   .sidebar button {
     margin: 0.5rem;
     font-size: 12px;
-    height: 50%;
-    width: 300px; /* Fixed width for buttons */
-    max-width: 250px;
+    height: 70%;
+    width: 150px; /* Adjust width to fit in a single row */
+    max-width: none; /* Allow button width to be flexible */
+    flex: 0 0 auto; /* Prevent buttons from shrinking */
   }
 
   .description-image {
