@@ -1,6 +1,7 @@
 
 /* About section styles */
 .about-content {
+  overflow-x: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -208,6 +209,18 @@
 }
 
 @media (max-width: 480px) {
+   .abt-sidebar {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+  }
+
+  .abt-sidebar button {
+    flex: 1;
+    font-size: 13px;
+  }
+
   .skills-grid {
     grid-template-columns: 1fr;
   }
