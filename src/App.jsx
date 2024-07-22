@@ -12,6 +12,7 @@ import { BrowserRouter as Router } from 'react-router-dom'
 
 const App = () => {
   return (
+    <Router basename="/Portfolio">
     <div>
       <Navbar/>
       <Hero/>
@@ -20,6 +21,7 @@ const App = () => {
       <Contact/>
       <Footer/>
     </div>
+    </Router>
   )
 }
 
