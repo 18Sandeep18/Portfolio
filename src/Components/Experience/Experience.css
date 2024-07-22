@@ -252,7 +252,7 @@
   }
 
   .btn {
-    font-size: 6px;
+    font-size: 12px;
     font-weight: 700;
   }
 
@@ -270,8 +270,9 @@
 
   .sidebar button {
     margin: 0.5rem;
-    font-size: 12px;
+    font-size: 18px;
     height: 70%;
+    font-weight: 500;
     width: 150px; /* Adjust width to fit in a single row */
     max-width: none; /* Allow button width to be flexible */
     flex: 0 0 auto; /* Prevent buttons from shrinking */
