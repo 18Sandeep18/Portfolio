@@ -1,63 +1,53 @@
-import React, { useState } from 'react';
+import React, { act, useState } from 'react';
 import './Experience.css';
 import im from '../../assets/Product.png'
+import img1 from '../../assets/home.jpg'
+import img2 from '../../assets/Roll.jpg'
+import img3 from '../../assets/Car.jpg'
+import img4 from '../../assets/Product.png'
+import img5 from '../../assets/home.jpg'
 const projects = [
   {
-    name: 'Project 1',
+    name: 'Pneuemonia Detection Using CNN',
+    title: 'Pneuemonia Detection Using CNN',
     description: 'Description of Project 1',
-    image: 'path/to/image1.png',
+    image: img1,
     liveDemo: 'http://livedemo1.com',
     github: 'http://github1.com',
   },
   {
-    name: 'Pneuemonia Detection USing CNN',
+    name: 'Roll the dice',
+    title: 'Roll the dice',
     description: 'Description of Project 2',
-    image: 'path/to/image2.png',
+    image: img2,
     liveDemo: 'http://livedemo2.com',
     github: 'http://github2.com',
   },
   {
-    name: 'ROll the dice using HTML<CSS<JAVASCRIPT',
+    name: 'Car Price Prediction',
+    title: 'Car Price Prediction',
     description: 'Description of Project 3',
-    image: 'path/to/image3.png',
+    image: img3,
     liveDemo: 'http://livedemo3.com',
     github: 'http://github3.com',
   },
   {
-    name: 'Project 4',
-    description: 'Description of Project 3',
-    image: 'path/to/image3.png',
+    name: 'E-commerce Website',
+    title: 'E-commerce Website',
+    description: 'Description of Project 4',
+    image: img4,
     liveDemo: 'http://livedemo3.com',
     github: 'http://github3.com',
   },
   {
-    name: 'Project 5',
-    description: 'Description of Project 3',
-    image: 'path/to/image3.png',
+    name: 'ChatBot',
+    title: 'ChatBot',
+    description: 'Description of Project 5',
+    image: img5,
     liveDemo: 'http://livedemo3.com',
     github: 'http://github3.com',
   },
-  {
-    name: 'Project 6',
-    description: 'Description of Project 3',
-    image: 'path/to/image3.png',
-    liveDemo: 'http://livedemo3.com',
-    github: 'http://github3.com',
-  },
-  {
-    name: 'Project 7',
-    description: 'Description of Project 3',
-    image: 'path/to/image3.png',
-    liveDemo: 'http://livedemo3.com',
-    github: 'http://github3.com',
-  },
-  {
-    name: 'Project 8',
-    description: 'Description of Project 3',
-    image: 'path/to/image3.png',
-    liveDemo: 'http://livedemo3.com',
-    github: 'http://github3.com',
-  },
+  
   // Add remaining projects similarly
 ];
 
@@ -81,17 +71,17 @@ const Projects = () => {
           </div>
           <div className="main-content">
             <div class="project-description">
-              <div class="description-title">Project Title</div>
+              <div class="description-title">{activeProject.title}</div>
               <div className="sub-pro">
 
                 <div class="description-image">
-                  <img src={im} alt="Project Image"/>
+                  <img src={activeProject.image} alt="Project Image"/>
                 </div>
                 <div class="description-text">
-                  <p>Your project description content goes here...hgdhjlfafjahdkgsdbgfisrtf bzs,dfdbzfkuhdgfzndfg, zdjghlhdfug adh flgsdf,gmdfglskjfdghajdhfpi serhg9ehgkejrle gadfkghierhasdnfkjerhgiuerhger gbadmfnskankfjnerfuiewreprtio erjfhrueht aklfafhaefanf iryt vduy dkfjn hbhbe rwheiurheiuhh </p>
+                  <p>{activeProject.description} </p>
                   <div class="buttons">
-                    <button class="btn">Button 1</button>
-                    <button class="btn">Button 2</button>
+                    <button class="btn">GitHub</button>
+                    <button class="btn">Live Demo</button>
                   </div>
                 </div>
               </div>
