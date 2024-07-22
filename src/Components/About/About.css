@@ -39,7 +39,7 @@
   transition: transform 0.6s, box-shadow 0.2s;
   width: 100%; /* Make buttons take the full width of the sidebar */
   max-width: 200px;
-  font-size: 1.4rem; /* Optional: limit the max width of buttons */
+  font-size: 1.2rem; /* Optional: limit the max width of buttons */
 }
 
 .abt-sidebar button.active {
@@ -220,16 +220,20 @@
     flex: 1;
     font-size: 13px;
   }
-
   .skills-grid {
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    transform: transition 0.3s;
   }
-
+  .skills-grid :hover{
+    transition: scale(1.1);
+  }
   .skill-name {
     font-size: 14px;
   }
 
   .skill-percent-text {
-    font-size: 12px;
+    font-size: 15px;
   }
 }

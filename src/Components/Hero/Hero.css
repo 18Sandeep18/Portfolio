@@ -25,7 +25,7 @@
 }
 
 .description-container h1 {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     margin-bottom: 10px;
 }
 
@@ -52,6 +52,9 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+.connect-button{
+    text-decoration: none;
 }
 
 .connect-button:hover, .resume-button:hover {

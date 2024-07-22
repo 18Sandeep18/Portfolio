@@ -50,7 +50,6 @@
 }
 
 .contact-info {
-  margin-top: 20px;
   display: flex;
   flex-direction: row; /* Change to row for larger screens */
   align-items: center;

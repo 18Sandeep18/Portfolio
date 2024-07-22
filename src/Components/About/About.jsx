@@ -95,16 +95,18 @@ const About = () => {
               <div className="section education">
                 <h1>Education</h1>
                 <div className="details">
-                  <h3>BTech Graduation</h3>
+                  <h3>BTech Graduation:</h3>
+                  <br />
                   <ul>
                     <li>Vellore Institute of Technology</li>
                     <li>Graduation Year: 2025</li>
                     <li>CGPA: 8.75</li>
                   </ul>
-                  <h3>Secondary Education</h3>
+                  <h3>Secondary Education:</h3>
+                  <br />
                   <ul>
                     <li>Jawahar Navodaya Vidyalaya (CBSE)</li>
-                    <li>Passed Year: 2020</li>
+                    <li>Year Passed: 2020</li>
                     <li>Percentage: 90.5</li>
                   </ul>
                 </div>
