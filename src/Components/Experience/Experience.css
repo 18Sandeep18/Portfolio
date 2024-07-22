@@ -25,7 +25,7 @@
   align-items: center;
   gap: 2rem;
   min-width: 200px;
-  max-height: 200px; /* Adjust height as needed */
+  max-height: 300px; /* Adjust height as needed */
   overflow-y: scroll;
   align-self: center;
 }
@@ -90,7 +90,7 @@
 .description-title {
   text-align: center;
   font-size: 2rem;
-  padding-bottom: 2rem;
+  
   font-weight: bold;
   width: 100%;
   margin-bottom: 1rem;
@@ -126,7 +126,7 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .btn:hover {
@@ -192,7 +192,7 @@
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1090px) {
   .sub-pro {
     flex-direction: column;
     gap: 1rem;
@@ -201,36 +201,36 @@
   }
 
   .sidebar {
-    max-width: 100%;
+    max-width: 70%;
     flex-direction: row;
     justify-content: space-around;
     min-height: 120px;
     gap: 30px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
 
   .sidebar button {
-    font-size: 10px;
-    height: 50%;
-    width: 300px; /* Fixed width for buttons */
-    max-width: 300px;
+    font-size: 12px;
+    height: 50%; 
+    min-width: 300px;
   }
 
   .description-title {
     font-size: 1.6rem;
-    text-align: center; /* Center the title text */
+    text-align: center; 
+    padding-bottom: 2rem;
   }
 
   .description-image {
     display: flex;
-    justify-content: center; /* Center the image horizontally */
-    align-items: center; /* Center the image vertically */
-    width: 100%; /* Ensure the container takes full width */
+    justify-content: center;
+    align-items: center; 
+    width: 100%; 
   }
 
   .description-image img {
     width: 200px;
-    max-width: 100%; /* Ensure the image scales down properly */
+    max-width: 100%; 
   }
 
   .description-text {
@@ -242,7 +242,7 @@
     font-size: 12px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 590px) {
   .description-title {
     font-size: 0.9rem;
   }
@@ -261,6 +261,7 @@
   }
 
   .sidebar {
+    max-width: 100%;
     display: flex;
     flex-wrap: nowrap; /* Prevent wrapping to ensure single row */
     overflow-x: auto; /* Allow horizontal scrolling if needed */
@@ -270,11 +271,10 @@
 
   .sidebar button {
     margin: 0.5rem;
-    font-size: 18px;
-    height: 70%;
-    font-weight: 500;
-    width: 150px; /* Adjust width to fit in a single row */
-    max-width: none; /* Allow button width to be flexible */
+    font-size: 15px;
+    height: 60%;
+    font-weight: 700; /* Adjust width to fit in a single row */
+    max-width:10px; /* Allow button width to be flexible */
     flex: 0 0 auto; /* Prevent buttons from shrinking */
   }
 
