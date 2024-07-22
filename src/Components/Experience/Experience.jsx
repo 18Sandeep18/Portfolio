@@ -1,7 +1,7 @@
 import React, { act, useState } from 'react';
 import './Experience.css';
 import im from '../../assets/Product.png'
-import img1 from '../../assets/home.jpg'
+import img1 from '../../assets/p1.webp'
 import img2 from '../../assets/Roll.jpg'
 import img3 from '../../assets/Car.jpg'
 import img4 from '../../assets/Product.png'
