@@ -7,20 +7,22 @@ import Experience from './Components/Experience/Experience'
 import Contact from './Components/Contact/Contact'
 import Footer from './Components/Footer/Footer'
 import { BrowserRouter as Router } from 'react-router-dom'
+import Learn from './Components/Learn/Learn'
 
 
 
 const App = () => {
   return (
     <Router basename="/Portfolio">
-    <div>
-      <Navbar/>
-      <Hero/>
-      <About/>
-      <Experience/>
-      <Contact/>
-      <Footer/>
-    </div>
+      <div>
+        <Navbar />
+        <Hero />
+        <About />
+        <Experience />
+        <Learn />
+        <Contact />
+        <Footer />
+      </div>
     </Router>
   )
 }

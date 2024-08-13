@@ -8,7 +8,7 @@
   background-color: #333;
   position: fixed;  /* Changed to fixed */
   top: 0;  /* Ensure it stays at the top */
-  width: 100%;  /* Ensure it spans the full width */
+  width: 100%;
   z-index: 1000;
   color: #fff;
   font-family: Arial, sans-serif;

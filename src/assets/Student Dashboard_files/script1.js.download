@@ -1,0 +1,14 @@
+document.addEventListener('DOMContentLoaded', () => {
+    // Example JavaScript to dynamically update the dashboard
+    const processTasks = document.getElementById('process-tasks');
+    const pendingTasks = document.getElementById('pending-tasks');
+    const finishedTasks = document.getElementById('finished-tasks');
+    const timeSpent = document.getElementById('time-spent');
+
+    // Fetch or calculate the values here and update the DOM elements
+    // For example:
+    processTasks.textContent = 12;
+    pendingTasks.textContent = 3;
+    finishedTasks.textContent = 25;
+    timeSpent.textContent = '20 hours';
+});

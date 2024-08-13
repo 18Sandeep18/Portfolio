@@ -17,6 +17,14 @@ const projects = [
     github: 'http://github1.com',
   },
   {
+    name: 'Study Partner',
+    title: 'Task Manager using MERN stack',
+    description: 'Implemented Complete CRUD operations with highly secure authentication using JWT, and incorporated many tools such as tailwind css, firebase',
+    image: img4,
+    liveDemo: 'http://livedemo1.com',
+    github: 'http://github1.com',
+  },
+  {
     name: 'Roll the dice',
     title: 'Roll the dice',
     description: 'Roll the Dice project, is an interactive web game created using HTML, CSS, and JavaScript, allowing users to roll virtual dice and play according to my rules displayed dynamically. This fun and engaging project showcases the use of basic web development skills to create a simple yet enjoyable user experience.',
@@ -59,7 +67,7 @@ const Projects = () => {
     const mobile = window.minWidth <= 700
     buttons.forEach((button, index) => {
       if (mobile && index != 0 && index != buttons.length - 1) {
-        button.addEventListener('click', function() {
+        button.addEventListener('click', function () {
           this.scrollIntoView({
             behavior: 'smooth',
             block: 'center',
@@ -72,7 +80,7 @@ const Projects = () => {
     return () => {
       buttons.forEach((button, index) => {
         if (index !== 0 && index !== buttons.length - 1) {
-          button.removeEventListener('click', function() {
+          button.removeEventListener('click', function () {
             this.scrollIntoView({
               behavior: 'smooth',
               block: 'center',
@@ -85,33 +93,31 @@ const Projects = () => {
   }, [activeProject]);
 
   return (
-    <div id="experience" className="projects">
-      <div className="projects-content">
-        <div className="container">
-          <div className="sidebar">
-            {projects.map((project, index) => (
-              <button
-                key={index}
-                onClick={() => setActiveProject(project)}
-                className={activeProject.name === project.name ? 'active' : ''}
-              >
-                {project.name}
-              </button>
-            ))}
-          </div>
-          <div className="main-content">
-            <div className="project-description">
-              <div className="description-title">{activeProject.title}</div>
-              <div className="sub-pro">
-                <div className="description-image">
-                  <img src={activeProject.image} alt="Project Image"/>
-                </div>
-                <div className="description-text">
-                  <p>{activeProject.description} </p>
-                  <div className="buttons">
-                    <button className="btn">GitHub</button>
-                    <button className="btn">Live Demo</button>
-                  </div>
+    <div id="experience" className="ex-projects">
+      <div className="container">
+        <div className="sidebar">
+          {projects.map((project, index) => (
+            <button
+              key={index}
+              onClick={() => setActiveProject(project)}
+              className={activeProject.name === project.name ? 'active' : ''}
+            >
+              {project.name}
+            </button>
+          ))}
+        </div>
+        <div className="main-content">
+          <div className="project-description">
+            <div className="description-title">{activeProject.title}</div>
+            <div className="sub-pro">
+              <div className="description-image">
+                <img src={activeProject.image} alt="Project Image" />
+              </div>
+              <div className="description-text">
+                <p>{activeProject.description} </p>
+                <div className="buttons">
+                  <button className="btn">GitHub</button>
+                  <button className="btn">Live Demo</button>
                 </div>
               </div>
             </div>

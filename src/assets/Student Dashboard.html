@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://localhost:8080/set-task -->
+<html lang="en" data-arp=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="./Student Dashboard_files/style1.css">
+</head>
+<body>
+    <div class="dashboard">
+    
+    <h1>Hey Sandeep60, your Dashboard</h1>
+
+        <div class="cards">
+            <form class="card" action="http://localhost:8080/do-task" method="get">
+            <div>
+                <h2>New Task</h2>
+
+                <div class="new-task">
+                    <p>Topic: Dynamic Programming</p>
+                    <p>Time to spend: 8</p>
+                    <button class="btn">Start</button>
+                </div>
+            </div>
+            </form>
+            <div class="card">
+                <h2>Pending Tasks</h2>
+                <p>Number of pending tasks: <span id="pending-tasks">5</span></p>
+            </div>
+            <div class="card">
+                <h2>Finished Tasks</h2>
+                <p>Number of finished tasks: <span id="finished-tasks">20</span></p>
+            </div>
+            <div class="card">
+                <h2>Time Spent</h2>
+                <p>Total time spent: <span id="time-spent">15 hours</span></p>
+            </div>
+        </div>
+        <!-- Logout Button -->
+        <form id="logout-form" action="http://localhost:8080/sign-in" method="get">
+            <button type="submit">Logout</button>
+        </form>
+    </div>
+    <script src="./Student Dashboard_files/script1.js.download"></script>
+
+
+</body></html>

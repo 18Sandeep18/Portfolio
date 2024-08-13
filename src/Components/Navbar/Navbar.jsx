@@ -56,6 +56,15 @@ const Navbar = () => {
         </li>
         <li>
           <AnchorLink
+            className={`anchor-link ${active === "learn" ? "active" : ""}`}
+            href='#learn'
+            onClick={() => handleClick("learn")}
+          >
+            Learn
+          </AnchorLink>
+        </li>
+        <li>
+          <AnchorLink
             className={`anchor-link ${active === "contact" ? "active" : ""}`}
             href='#contact'
             onClick={() => handleClick("contact")}

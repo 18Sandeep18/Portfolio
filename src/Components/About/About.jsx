@@ -6,14 +6,14 @@ const About = () => {
 
   return (
     <div id='about' className="about">
-      <div className='about-content'>
+      <div className='abt-content'>
         <div className="abt-container">
           <div className="abt-sidebar">
             <button onClick={() => setActiveSection('skills')} className={activeSection === 'skills' ? 'active' : ''}>Skills</button>
             <button onClick={() => setActiveSection('certifications')} className={activeSection === 'certifications' ? 'active' : ''}>Certifications</button>
             <button onClick={() => setActiveSection('education')} className={activeSection === 'education' ? 'active' : ''}>Education</button>
           </div>
-          <div className="main-content">
+          <div className="abt-main-content">
             {activeSection === 'skills' && (
               <div className="section skills">
                 <h1>Skills</h1>
