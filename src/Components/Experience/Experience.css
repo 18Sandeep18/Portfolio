@@ -155,7 +155,7 @@
     }
 
     .sidebar {
-        max-width: 70%;
+        max-width: 100%;
         flex-direction: row;
         justify-content: space-around;
         margin-bottom: 1rem;
@@ -187,7 +187,7 @@
     }
 
     .description-text {
-        font-size: 0.9rem;
+        font-size: 1.3rem;
         margin-top: 1rem;
     }
 
@@ -215,7 +215,7 @@
     }
 
     .sidebar {
-        max-width: 70%;
+        max-width: 100%;
         flex-direction: row;
         justify-content: space-around;
         min-height: 120px;
@@ -249,7 +249,7 @@
     }
 
     .description-text {
-        font-size: 0.8rem;
+        font-size: 1.1rem;
         text-align: center;
     }
 
@@ -264,7 +264,7 @@
     }
 
     .description-text {
-        font-size: 0.1rem;
+        font-size: 0.7rem;
     }
 
     .container {
