@@ -18,7 +18,7 @@
 }
 
 /* Sidebar Styling */
-.sidebar {
+.exsidebar {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,11 +32,11 @@
     /* Prevent horizontal overflow */
 }
 
-.sidebar::-webkit-scrollbar {
+.exsidebar::-webkit-scrollbar {
     display: none;
 }
 
-.sidebar button {
+.exsidebar button {
     padding: 1rem;
     background-color: #2c2c2c;
     color: #e0e0e0;
@@ -53,12 +53,12 @@
     /* Center text inside buttons */
 }
 
-.sidebar button.active {
+.exsidebar button.active {
     background-color: #7CB9E8;
     color: white;
 }
 
-.sidebar button:hover {
+.exsidebar button:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
     /* Adjust overflow settings if necessary */
@@ -154,7 +154,7 @@
         padding: 1rem;
     }
 
-    .sidebar {
+    .exsidebar {
         max-width: 100%;
         flex-direction: row;
         justify-content: space-around;
@@ -163,7 +163,7 @@
         gap: 30px;
     }
 
-    .sidebar button {
+    .exsidebar button {
         margin: 0.5rem;
         font-size: 12px;
         height: auto;
@@ -214,7 +214,7 @@
         align-items: center;
     }
 
-    .sidebar {
+    .exsidebar {
         max-width: 100%;
         flex-direction: row;
         justify-content: space-around;
@@ -223,7 +223,7 @@
         flex-wrap: nowrap;
     }
 
-    .sidebar button {
+    .exsidebar button {
         font-size: 12px;
         height: auto;
         /* Allow flexible height */
@@ -260,11 +260,13 @@
 
 @media (max-width: 590px) {
     .description-title {
-        font-size: 0.9rem;
+        font-size: 1.4rem;
+        padding-bottom: 10rem;
     }
 
     .description-text {
-        font-size: 0.7rem;
+        font-size: 1rem;
+
     }
 
     .container {
@@ -275,7 +277,6 @@
         /* background-color: red; */
         margin-left: 10%;
         height: 100%;
-        padding-bottom: 13%;
     }
 
     .main-content {
@@ -292,6 +293,7 @@
 
 
     .btn {
+        margin-top: 10%;
         font-size: 12px;
         font-weight: 700;
     }
@@ -300,21 +302,24 @@
         width: 80%;
     }
 
-    .sidebar {
-        max-width: 100%;
+    .exsidebar {
+        margin-left: 100px;
         display: flex;
+        /* margin-left: 100px; */
+        width: auto;
+
+        /* background-color: yellow; */
         flex-wrap: nowrap;
         /* Prevent wrapping to ensure single row */
-        overflow-x: auto;
         /* Allow horizontal scrolling if needed */
-        padding: 0;
+
         /* Remove any default padding */
-        margin: 0;
+        margin-left: 15%;
         /* Remove any default margin */
         /* margin-bottom: 30px; */
     }
 
-    .sidebar button {
+    .exsidebar button {
         margin: 0.5rem;
         font-size: 15px;
         height: auto;
@@ -345,7 +350,8 @@
     .description-image img {
         width: 100%;
         /* Ensure the image scales down properly */
-        max-width: 200px;
+        max-width: 300px;
+        margin-bottom: 30%;
         /* Limit the maximum width of the image */
     }
 

@@ -95,7 +95,7 @@ const Projects = () => {
   return (
     <div id="experience" className="ex-projects">
       <div className="container">
-        <div className="sidebar">
+        <div className="exsidebar">
           {projects.map((project, index) => (
             <button
               key={index}
