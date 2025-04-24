@@ -13,7 +13,7 @@ import Learn from './Components/Learn/Learn'
 
 const App = () => {
   return (
-    <Router basename="/Portfolio">
+    <Router basename="/">
       <div>
         <Navbar />
         <Hero />
