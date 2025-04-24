@@ -14,39 +14,47 @@ const projects = [
     description: 'Pneumonia detection using Convolutional Neural Networks (CNN) involves training a deep learning model to accurately identify pneumonia from chest X-ray images. This project utilizes image preprocessing and data augmentation techniques to enhance the training process.',
     image: img1,
     liveDemo: 'http://livedemo1.com',
-    github: 'http://github1.com',
+    github: 'https://github.com/18Sandeep18/DL-Pneumonia-Detection-using-CNN.git',
+  },
+  {
+    name: 'Fetal Health Detection Using AI',
+    title: 'Fetal Health Detection Using AI',
+    description: 'Pneumonia detection using Convolutional Neural Networks (CNN) involves training a deep learning model to accurately identify pneumonia from chest X-ray images. This project utilizes image preprocessing and data augmentation techniques to enhance the training process.',
+    image: img1,
+    liveDemo: 'http://livedemo1.com',
+    github: 'https://github.com/18Sandeep18/DL-Pneumonia-Detection-using-CNN.git',
   },
   {
     name: 'Study Partner',
     title: 'Task Manager using MERN stack',
     description: 'Implemented Complete CRUD operations with highly secure authentication using JWT, and incorporated many tools such as tailwind css, firebase',
     image: img4,
-    liveDemo: 'http://livedemo1.com',
-    github: 'http://github1.com',
+    liveDemo: 'https://studypartner-sandeep-mern.vercel.app/',
+    github: 'https://github.com/18Sandeep18/StudyPartner-MERN01.git',
   },
   {
     name: 'Roll the dice',
     title: 'Roll the dice',
     description: 'Roll the Dice project, is an interactive web game created using HTML, CSS, and JavaScript, allowing users to roll virtual dice and play according to my rules displayed dynamically. This fun and engaging project showcases the use of basic web development skills to create a simple yet enjoyable user experience.',
     image: img2,
-    liveDemo: 'http://livedemo2.com',
-    github: 'http://github2.com',
+    liveDemo: 'https://dice-roll-new.vercel.app/',
+    github: 'https://github.com/18Sandeep18/DiceRoll-New.git',
   },
   {
     name: 'Car Price Prediction',
     title: 'Car Price Prediction',
     description: 'The Car Price Prediction project utilizes machine learning algorithms to analyze and predict the prices of cars based on various features such as make, model, year, and mileage. This project demonstrates the application of data science techniques to provide valuable insights and accurate pricing estimates in the automotive industry.',
     image: img3,
-    liveDemo: 'http://livedemo3.com',
-    github: 'http://github3.com',
+    liveDemo: 'https://car-price-prediction-2-hrm7.onrender.com/',
+    github: 'https://github.com/18Sandeep18/car-price-prediction.git',
   },
   {
     name: 'E-commerce Website',
     title: 'E-commerce Website',
-    description: 'Developed a full-featured e-commerce website using the MERN stack,  Consists of Mongo DB, Express JS, React JS, Node JS encompassing product listings, user authentication, and secure payment integration. Implemented a responsive design for seamless user experience across devices. Demonstrated expertise in end-to-end application development and deployment',
+    description: 'Developing a full-featured e-commerce website using the MERN stack,  Consists of Mongo DB, Express JS, React JS, Node JS encompassing product listings, user authentication, and secure payment integration. Implementing a responsive design for seamless user experience across devices. Demonstrated expertise in end-to-end application development and deployment',
     image: img4,
-    liveDemo: 'http://livedemo3.com',
-    github: 'http://github3.com',
+    liveDemo: 'https://mern-app-2.vercel.app/',
+    github: 'https://github.com/18Sandeep18/MERN-APP2.git',
   },
   {
     name: 'ChatBot',
@@ -62,11 +70,10 @@ const Projects = () => {
   const [activeProject, setActiveProject] = useState(projects[0]);
 
   useEffect(() => {
-
     const buttons = document.querySelectorAll('.sidebar button');
     const mobile = window.minWidth <= 700
     buttons.forEach((button, index) => {
-      if (mobile && index != 0 && index != buttons.length - 1) {
+      if (mobile && index !== 0 && index !== buttons.length - 1) {
         button.addEventListener('click', function () {
           this.scrollIntoView({
             behavior: 'smooth',
@@ -114,10 +121,24 @@ const Projects = () => {
                 <img src={activeProject.image} alt="Project Image" />
               </div>
               <div className="description-text">
-                <p>{activeProject.description} </p>
+                <p>{activeProject.description}</p>
                 <div className="buttons">
-                  <button className="btn">GitHub</button>
-                  <button className="btn">Live Demo</button>
+                  <a
+                    href={activeProject.github}
+                    className="btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub
+                  </a>
+                  <a
+                    href={activeProject.liveDemo}
+                    className="btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Live Demo
+                  </a>
                 </div>
               </div>
             </div>

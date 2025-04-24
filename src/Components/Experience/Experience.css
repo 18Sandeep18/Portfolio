@@ -1,15 +1,12 @@
 /* Container Styling */
 .container {
-    /* background-color: red; */
     padding: 2rem;
     border-radius: 12px;
     height: 75vh;
-    /* width: 100%; */
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
-    /* background-color: red; */
 }
 
 #experience {
@@ -23,13 +20,10 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    /* min-width: 300px; */
     max-height: 300px;
-    /* Adjust height as needed */
     overflow-y: auto;
     width: 350px;
     align-self: center;
-    /* Prevent horizontal overflow */
 }
 
 .exsidebar::-webkit-scrollbar {
@@ -46,11 +40,11 @@
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
     width: 90%;
-    /* Full width button */
     max-width: 400px;
     font-size: 1.2rem;
     text-align: center;
-    /* Center text inside buttons */
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .exsidebar button.active {
@@ -61,7 +55,6 @@
 .exsidebar button:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
-    /* Adjust overflow settings if necessary */
 }
 
 /* Main Content Styling */
@@ -70,7 +63,6 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    /* min-width: 300px; */
     justify-content: center;
     padding: 1rem;
 }
@@ -84,18 +76,17 @@
     background-color: #2a2a2a;
     padding: 1.3rem;
     height: 90%;
+    width: 90%;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    /* background-color: green; */
 }
 
 .sub-pro {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    gap: 0rem;
-    /* background-color: yellow; */
+    width: 80%;
+    gap: 5%;
 }
 
 .description-title {
@@ -103,13 +94,12 @@
     font-size: 1.5rem;
     font-weight: bold;
     color: #7CB9E8;
-    /* Accent color for headers */
     margin-bottom: 1rem;
 }
 
 .description-image {
-    height: 150px;
-    width: 300px;
+    height: 200px;
+    width: 40%;
 }
 
 .description-image img {
@@ -130,20 +120,24 @@
 }
 
 .btn {
-    padding: 0.5rem 1rem;
+    padding: 0.8rem 1.5rem;
     background-color: #7CB9E8;
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 25px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
     font-size: 1rem;
-    /* Ensure buttons have enough space */
-    min-width: 100px;
+    min-width: 120px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
 }
 
 .btn:hover {
     background-color: #438fc9;
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
 }
 
 /* Media Queries for Responsive Design */
@@ -167,10 +161,8 @@
         margin: 0.5rem;
         font-size: 12px;
         height: auto;
-        /* Allow flexible height */
         max-width: 300px;
         flex: 1;
-        /* Allow button to grow */
     }
 
     .main-content {
@@ -220,32 +212,23 @@
         justify-content: space-around;
         min-height: 120px;
         gap: 30px;
-        flex-wrap: nowrap;
     }
 
     .exsidebar button {
         font-size: 12px;
         height: auto;
-        /* Allow flexible height */
-        min-width: 300px;
     }
 
     .description-title {
         font-size: 1.6rem;
-        text-align: center;
-        padding-bottom: 2rem;
     }
 
     .description-image {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         width: 100%;
     }
 
     .description-image img {
         width: 200px;
-        max-width: 100%;
     }
 
     .description-text {
@@ -261,12 +244,10 @@
 @media (max-width: 590px) {
     .description-title {
         font-size: 1.4rem;
-        padding-bottom: 10rem;
     }
 
     .description-text {
         font-size: 1rem;
-
     }
 
     .container {
@@ -274,24 +255,19 @@
     }
 
     .project-description {
-        /* background-color: red; */
         margin-left: 10%;
         height: 100vh;
     }
 
     .main-content {
         display: flex;
-        flex: 1;
         flex-direction: column;
         gap: 2rem;
         max-width: 100%;
         height: 100%;
         justify-content: center;
         padding: 10%;
-        /* padding: 1rem;    */
-        /* background-color:red; */
     }
-
 
     .btn {
         margin-top: 10%;
@@ -306,29 +282,16 @@
     .exsidebar {
         margin-left: 100px;
         display: flex;
-        /* margin-left: 100px; */
         width: auto;
-
-        /* background-color: yellow; */
-        flex-wrap: nowrap;
-        /* Prevent wrapping to ensure single row */
-        /* Allow horizontal scrolling if needed */
-
-        /* Remove any default padding */
         margin-left: 15%;
-        /* Remove any default margin */
-        /* margin-bottom: 30px; */
     }
 
     .exsidebar button {
         margin: 0.5rem;
         font-size: 15px;
         height: auto;
-        /* Allow flexible height */
         font-weight: 700;
-        /* Adjust width to fit in a single row */
         flex: 0 0 auto;
-        /* Prevent buttons from shrinking */
     }
 
     .ex-projects {
@@ -340,21 +303,14 @@
     .description-image {
         display: flex;
         justify-content: center;
-        /* Center the image horizontally */
         align-items: center;
-        /* Center the image vertically */
         width: 100%;
         margin-bottom: -30px;
-        /* Ensure the container takes full width */
     }
 
     .description-image img {
         width: 100%;
-        /* Ensure the image scales down properly */
         max-width: 300px;
         margin-bottom: 30%;
-        /* Limit the maximum width of the image */
     }
-
-
 }
