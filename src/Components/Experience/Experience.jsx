@@ -21,8 +21,8 @@ const projects = [
     title: 'Fetal Health Detection Using AI',
     description: 'Pneumonia detection using Convolutional Neural Networks (CNN) involves training a deep learning model to accurately identify pneumonia from chest X-ray images. This project utilizes image preprocessing and data augmentation techniques to enhance the training process.',
     image: img1,
-    liveDemo: 'http://livedemo1.com',
-    github: 'https://github.com/18Sandeep18/DL-Pneumonia-Detection-using-CNN.git',
+    liveDemo: 'https://fetal-ai.onrender.com/',
+    github: 'https://github.com/18Sandeep18/Fetal-AI.git',
   },
   {
     name: 'Study Partner',
