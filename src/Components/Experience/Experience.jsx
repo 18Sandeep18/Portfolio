@@ -6,6 +6,7 @@ import img2 from '../../assets/Roll.jpg';
 import img3 from '../../assets/Car.jpg';
 import img4 from '../../assets/Product.png';
 import img5 from '../../assets/chatbot.avif';
+import img6 from '../../assets/Fetus.jpg';
 
 const projects = [
   {
@@ -20,7 +21,7 @@ const projects = [
     name: 'Fetal Health Detection Using AI',
     title: 'Fetal Health Detection Using AI',
     description: 'Pneumonia detection using Convolutional Neural Networks (CNN) involves training a deep learning model to accurately identify pneumonia from chest X-ray images. This project utilizes image preprocessing and data augmentation techniques to enhance the training process.',
-    image: img1,
+    image: img6,
     liveDemo: 'https://fetal-ai.onrender.com/',
     github: 'https://github.com/18Sandeep18/Fetal-AI.git',
   },
