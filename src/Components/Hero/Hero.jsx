@@ -25,7 +25,7 @@ const Home = () => {
                         className="connect-button"
                         href='#contact'
                         onClick={() => handleClick("contact")}
-                    >
+                        >
                         Contact
                     </AnchorLink>
                     <button className="resume-button"  onClick={handleDownloadResume}>Download Resume</button>

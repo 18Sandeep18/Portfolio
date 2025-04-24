@@ -85,11 +85,11 @@
 }
 
 .contact-item .icon {
-  font-size: 24px;
+  font-size: 5px;
 }
 
 .contact-item .info {
-  font-size: 18px;
+  font-size: 10px;
 }
 
 .contact-item .info a {
@@ -108,73 +108,16 @@
 }
 
 .one-icon img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
-
-/* Media Queries for Tablet View */
-@media (max-width: 1024px) {
-  .contact-container {
-    flex-direction: column;
-    padding: 10px;
-  }
-
-  .contact-form {
-    width: 90%;
-  }
-
-  .contact-info {
-    flex-direction: row;
-    /* Maintain row layout for tablets */
-    flex-wrap: wrap;
-    /* Allow wrapping if needed */
-    margin-top: 20px;
-    gap: 20px;
-  }
-
-  .contact-item .info {
-    font-size: 16px;
-  }
-}
-
-/* Media Queries for Mobile View */
 @media (max-width: 768px) {
-  .contact-container {
-    flex-direction: column;
-    padding: 5px;
-    margin-left: 10%;
+  .contact-container{
+    width: 100vw;
+    background-color: yellow;
   }
-
-  .contact-form {
-    width: 100%;
-  }
-
-  .contact-form label {
-    font-size: 14px;
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    font-size: 14px;
-  }
-
-  .contact-form textarea {
-    height: 80px;
-  }
-
-  .contact-form button {
-    font-size: 14px;
-  }
-
-  .contact-info {
-    flex-direction: row;
-    /* Maintain row layout for mobile screens */
-    flex-wrap: wrap;
-    /* Allow wrapping if needed */
-    margin-top: 10px;
-    gap: 15px;
-  }
-
-  .contact-item .info {
-    font-size: 14px;
+  .one-icon img {
+    height: 10px;
+    transition: transform 0.5s;
+    cursor: pointer;
   }
 }

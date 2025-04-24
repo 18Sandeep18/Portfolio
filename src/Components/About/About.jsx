@@ -6,8 +6,6 @@ const About = () => {
 
   return (
     <div id='about' className="about">
-      <div className='abt-content'>
-        <div className="abt-container">
           <div className="abt-sidebar">
             <button onClick={() => setActiveSection('skills')} className={activeSection === 'skills' ? 'active' : ''}>Skills</button>
             <button onClick={() => setActiveSection('certifications')} className={activeSection === 'certifications' ? 'active' : ''}>Certifications</button>
@@ -74,7 +72,7 @@ const About = () => {
                     </div>
                     <div className="skill-percent-text">60%</div>
                   </div>
-                  <div className="skill-item">
+                  {/* <div className="skill-item">
                     <div className="skill-name">Express</div>
                     <div className="skill-bar">
                       <div className="skill-percentage" style={{ width: '55%' }}></div>
@@ -87,7 +85,7 @@ const About = () => {
                       <div className="skill-percentage" style={{ width: '65%' }}></div>
                     </div>
                     <div className="skill-percent-text">65%</div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             )}
@@ -140,9 +138,7 @@ const About = () => {
               </div>
             )}
           </div>
-        </div>
       </div>
-    </div>
   );
 };
 
