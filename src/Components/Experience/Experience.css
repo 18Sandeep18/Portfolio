@@ -282,7 +282,7 @@
     .exsidebar {
         margin-left: 100px;
         display: flex;
-        width: 80%;
+        width: 70%;
         margin-left: 15%;
     }
 
@@ -311,6 +311,6 @@
     .description-image img {
         width: 100%;
         max-width: 300px;
-        margin-bottom: 30%;
+        margin-bottom: 20%;
     }
 }
