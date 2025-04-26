@@ -8,6 +8,9 @@
    background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
   -webkit-backdrop-filter: blur(10px);
 }
+body.light-mode .home-container {
+    background: linear-gradient(to bottom right, #ffffff, #e0e0e0, #cccccc); /* light gradient */
+  }
 
 /* Keep this as it is, or switch to height: 100% if you're controlling parent height */
 .home-container {

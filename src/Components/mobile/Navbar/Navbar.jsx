@@ -3,11 +3,22 @@ import './Navbar.css'; // Link CSS
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
-  
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+    if (darkMode) {
+      // Switch to Light Mode
+      document.body.classList.add('light-mode');
+    } else {
+      // Switch to Dark Mode
+      document.body.classList.remove('light-mode');
+    }
+  };
   
 
   return (
@@ -15,9 +26,14 @@ const Navbar = () => {
       {/* Top Navbar */}
       <div className="mobile-navbar">
         <h1 className="navbar-logo">Sandeep Rishi</h1>
-        <button className="menu-button" onClick={toggleMenu}>
-          {menuOpen ? '✖' : '☰'}
-        </button>
+        <div className="navbar-buttons">
+          <button className="toggle-button" onClick={toggleDarkMode}>
+            {darkMode ? "☀️" : "🌙"}
+          </button>
+          <button className="menu-button" onClick={toggleMenu}>
+            {menuOpen ? '✖' : '☰'}
+          </button>
+        </div>
       </div>
 
       {/* Full Screen Menu Overlay */}

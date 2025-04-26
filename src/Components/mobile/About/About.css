@@ -10,6 +10,10 @@
   justify-content: center;
   text-align: center;
 }
+body.light-mode .about-section {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(240, 240, 240, 0.7)); /* Light background */
+  color: #000000; /* Update text color to black */
+}
 
 /* Heading */
 .about-section h2 {
@@ -17,6 +21,9 @@
   font-size: 2rem;
   color: #ffffff;
   text-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+}
+body.light-mode  .about-section h2{
+  color: #000000;
 }
 
 /* Top two buttons */
@@ -50,6 +57,10 @@
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
+body.light-mode .tab-button{
+  background: rgba(9, 134, 156, 0.514);
+  color: #000000;
+}
 
 .tab-button:hover {
   background: rgba(255, 255, 255, 0.2);
@@ -81,11 +92,17 @@
   font-size: 1.2rem;
   color: #ffffff;
 }
+body.light-mode .content-box h3{
+  color: #000000;
+}
 
 .content-box ul {
   padding-left: 1.2rem;
   list-style-type: disc;
   color: #dddddd;
+}
+body.light-mode .content-box ul{
+  color: #000000;
 }
 
 .content-box li {

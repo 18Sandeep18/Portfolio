@@ -2,18 +2,39 @@
   margin: 0;
   padding: 0;
 }
-
-body {
-  /* background-color: red; */
-  color: #e0e0e0;
-  font-family: 'Poppins', sans-serif;
-  width: 100vw;
-  overflow-x: hidden;
- 
+:root {
+  /* Default values (DARK MODE values) */
+  /* don't touch your current dark colors */
 }
-@media (max-width: 768px) {
-  body{
-    /* width: 60vw  ; */
-    /* background-color: violet; */
-  }
+/* DARK MODE (default) */
+body {
+  /* background-color: #0e0e0e;  */
+  color: #ffffff; /* white text */
+  transition: background-color 0.5s, color 0.5s;
+}
+
+/* LIGHT MODE */
+body.light-mode {
+  background-color: #ffffff; /* white bg */
+  color: #000000; /* black text */
+}
+
+/* Buttons in Light Mode */
+body.light-mode .menu-button,
+body.light-mode .toggle-button {
+  background-color: #cccccc;
+  color: #000000;
+}
+
+/* Buttons in Dark Mode (optional, if needed) */
+.menu-button,
+.toggle-button {
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  font-size: 24px;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
 }

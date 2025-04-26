@@ -11,6 +11,12 @@
   background: linear-gradient(135deg, rgba(2, 2, 2, 0.911), rgba(12, 80, 112, 0.966));
   -webkit-backdrop-filter: blur(10px);
 }
+
+body.light-mode .contact {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(240, 240, 240, 0.7)) ; /* Light background */
+  color: #000000; /* Update text color to black */
+}
+
 #title{
   margin-bottom: 2%;
 }
@@ -44,6 +50,9 @@
   font-weight: 600;
   /* margin-top: 1rem; */
 }
+body.light-mode .contact-form label{
+  color: #000000;
+}
 
 .contact-form input,
 .contact-form textarea {
@@ -58,6 +67,10 @@
   font-size: 1rem;
   font-family: 'Arial', sans-serif;
   outline: none;
+}
+body.light-mode .contact-form input, .contact-form textarea{
+  color: #000000;
+  background: rgba(0, 0, 0, 0.205);
 }
 
 .contact-form button {
@@ -103,13 +116,18 @@
   align-items: center;
   gap: 0.5rem;
   color: #fff;
-  font-size: 2rem;
+  font-size: 5rem;
+}
+body.light-mode .contact-item a{
+  color: #000000;
+
 }
 
 .contact-item a {
   color: #fff;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 600;
+  font-size: 1rem;
   transition: color 0.3s ease;
 }
 

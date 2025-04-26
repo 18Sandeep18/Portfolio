@@ -23,6 +23,9 @@
   font-weight: bold;
   color: white /* Neon blue text */
 }
+body.light-mode .navbar-logo{
+  color: black;
+}
 
 /* Hamburger / Close Button */
 .menu-button {

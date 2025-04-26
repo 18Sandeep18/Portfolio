@@ -45,10 +45,7 @@ const Contact = () => {
               <div className="icon"><img src={github} alt="GitHub" /></div>
               <div className="info"><a href="https://github.com/18Sandeep18" target="_blank" rel="noopener noreferrer">GitHub</a></div>
             </div>
-            <div className="contact-item show">
-              <div className="icon"><img src={twitter} alt="Twitter" /></div>
-              <div className="info"><a href="https://twitter.com/your-profile" target="_blank" rel="noopener noreferrer">Twitter</a></div>
-            </div>
+            
             <div className="contact-item show">
               <div className="icon"><img src={linkedin} alt="LinkedIn" /></div>
               <div className="info"><a href="https://www.linkedin.com/in/sandeeprishi/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
