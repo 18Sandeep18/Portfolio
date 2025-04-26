@@ -4,6 +4,7 @@ import Home from '../mobile/Hero/Hero';
 import Navbar from '../mobile/Navbar/Navbar';
 import About from '../mobile/About/About';
 import Experience from '../mobile/Experience/Experience'
+import Contact from '../mobile/Contact/Contact';
 const MobileLayout = () => {
   return (
     <div>
@@ -13,6 +14,7 @@ const MobileLayout = () => {
       <Home/>
       <About></About>
       <Experience/>
+      <Contact/>
 
     </div>
   );
