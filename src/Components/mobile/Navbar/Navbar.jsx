@@ -7,6 +7,8 @@ const Navbar = () => {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+  
+  
 
   return (
     <>

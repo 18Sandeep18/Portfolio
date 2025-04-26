@@ -1,33 +1,45 @@
 /* Top Navbar */
-/* Top Navbar */
 .mobile-navbar {
-  position: fixed; /* 🛑 important */
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f3f4f6; /* light gray */
+  background: rgba(66, 143, 194, 0.219); /* Dark blue background with transparency */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   padding: 1rem;
-  z-index: 1000; /* keep it above everything */
-  height: 60px; /* optional: control height */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* optional: slight shadow */
+  z-index: 1000;
+  height: 50px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
+  border-bottom: 1px solid rgba(0, 255, 255, 0.1); /* Soft neon blue border */
 }
-
 
 /* Logo */
 .navbar-logo {
   font-size: 1rem;
   font-weight: bold;
-  color: black;
+  color: white /* Neon blue text */
 }
 
 /* Hamburger / Close Button */
 .menu-button {
-  background: none;
+  background: none; /* Remove background to prevent any box appearance */
   font-size: 2rem;
   cursor: pointer;
+  color: #ffffff;
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth transitions for scale and color */
+  border: none; /* Remove any border */
+  padding: 0; /* Remove any padding */
+  margin: 0; /* Remove any margin */
+}
+
+/* Hover effect on Hamburger Button */
+.menu-button:hover {
+  transform: scale(1.1); /* Slight scale-up effect */
+  color: white; /* Neon blue on hover */
 }
 
 /* Full Screen Menu Overlay */
@@ -37,7 +49,9 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: white;
+  background: rgba(0, 0, 0, 0.6); /* Dark transparent background */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   z-index: 40;
   display: flex;
   justify-content: center;
@@ -56,14 +70,15 @@
 }
 
 .menu-list a {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 500;
-  color: black;
+  color: #ffffff; /* White text */
   text-decoration: none;
-  transition: color 0.3s;
+  transition: all 0.3s ease;
 }
 
 /* Active Link Style */
 .menu-list a:hover {
-  color: green;
+  color: #00ff88; /* Neon green on hover */
+  text-shadow: 0 0 5px #00ff88; /* Neon green glow effect */
 }

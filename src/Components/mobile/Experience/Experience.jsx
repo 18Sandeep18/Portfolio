@@ -6,7 +6,6 @@ import img3 from '../../../assets/Car.jpg';
 import img4 from '../../../assets/Product.png';
 import img5 from '../../../assets/chatbot.avif';
 import img6 from '../../../assets/Fetus.jpg';
-
 const projects = [
   {
     name: 'Pneuemonia Detection Using CNN',
@@ -19,7 +18,7 @@ const projects = [
   {
     name: 'Fetal Health Detection Using AI',
     title: 'Fetal Health Detection Using AI',
-    description: 'Fetal health prediction using machine learning models on CTG dataset. Built a complete frontend website connected to backend ML models for real-time predictions.',
+    description: 'Fetal health detection project using machine learning models trained on cardiotocography (CTG) data. It features a real-time web interface integrated with backend ML models for accurate health predictions.',
     image: img6,
     liveDemo: 'https://fetal-ai.onrender.com/',
     github: 'https://github.com/18Sandeep18/Fetal-AI.git',
@@ -27,7 +26,7 @@ const projects = [
   {
     name: 'Study Partner',
     title: 'Study Partner - MERN App',
-    description: 'Task manager app using MERN stack with authentication, authorization, Firebase integration, and Tailwind CSS for responsive design.',
+    description: 'Task management web application built with the MERN stack, offering user authentication, Firebase integration for real-time updates, and a responsive design using Tailwind CSS.',
     image: img4,
     liveDemo: 'https://studypartner-sandeep-mern.vercel.app/',
     github: 'https://github.com/18Sandeep18/StudyPartner-MERN01.git',
@@ -35,7 +34,7 @@ const projects = [
   {
     name: 'Roll the Dice',
     title: 'Roll the Dice',
-    description: 'Fun dice rolling game developed using HTML, CSS, and JavaScript showcasing random dice roll logic with clean UI.',
+    description: 'A simple and interactive dice rolling game created with HTML, CSS, and JavaScript, implementing random dice logic and clean visual transitions for a fun user experience.',
     image: img2,
     liveDemo: 'https://dice-roll-new.vercel.app/',
     github: 'https://github.com/18Sandeep18/DiceRoll-New.git',
@@ -43,7 +42,7 @@ const projects = [
   {
     name: 'Car Price Prediction',
     title: 'Car Price Prediction',
-    description: 'Car price prediction web app using machine learning models, trained to predict based on car features like model, year, and mileage.',
+    description: 'Car price prediction platform leveraging machine learning regression models to estimate vehicle prices based on features like brand, year, mileage, and model type.',
     image: img3,
     liveDemo: 'https://car-price-prediction-2-hrm7.onrender.com/',
     github: 'https://github.com/18Sandeep18/car-price-prediction.git',
@@ -51,7 +50,7 @@ const projects = [
   {
     name: 'E-commerce Website',
     title: 'E-commerce Website',
-    description: 'Full-stack e-commerce app built with the MERN stack, featuring user authentication, product management, and online payments.',
+    description: 'Full-stack e-commerce platform developed using the MERN stack with secure user authentication, dynamic product listings, cart management, and integrated online payment gateway.',
     image: img4,
     liveDemo: 'https://mern-app-2.vercel.app/',
     github: 'https://github.com/18Sandeep18/MERN-APP2.git',
@@ -59,7 +58,7 @@ const projects = [
   {
     name: 'ChatBot',
     title: 'ChatBot',
-    description: 'Intelligent chatbot web application designed to answer user queries in real-time using natural language processing techniques.',
+    description: 'AI-powered chatbot web application using natural language processing (NLP) techniques, capable of understanding user queries and providing intelligent, context-aware responses.',
     image: img5,
     liveDemo: 'http://livedemo3.com',
     github: 'http://github3.com',
