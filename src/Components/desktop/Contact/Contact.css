@@ -1,15 +1,29 @@
 .contact {
-  height: 90vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
+  justify-content: center;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  background: linear-gradient(135deg, rgba(2, 2, 2, 0.911), rgba(12, 80, 112, 0.966));
+  -webkit-backdrop-filter: blur(10px);
 }
-
 .contact-container {
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  align-content: center;
   padding: 20px;
-  height: 80%;
+    /* background-color: yellow; */
+    width: 100%;
+    height: 100vh;
+
+ 
 }
 
 .contact-form {
@@ -20,6 +34,7 @@
   gap: 10px;
   padding: 20px;
   box-sizing: border-box;
+  /* background-color: red; */
 }
 
 .contact-form label {

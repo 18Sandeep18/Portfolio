@@ -12,7 +12,7 @@ const MobileLayout = () => {
       {/* <h1>Mobile Layout coming soon!</h1> */}
       <Navbar/>
       <Home/>
-      <About></About>
+      <About/>
       <Experience/>
       <Contact/>
 

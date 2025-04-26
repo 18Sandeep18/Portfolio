@@ -12,6 +12,9 @@
     /* background-color: #1c1c1c; */
     color: #f1f1f1;
     overflow-y: hidden;
+    backdrop-filter: blur(10px);
+  background: linear-gradient(135deg, rgba(2, 2, 2, 0.911), rgba(12, 80, 112, 0.966));
+  -webkit-backdrop-filter: blur(10px);
 
 }
 

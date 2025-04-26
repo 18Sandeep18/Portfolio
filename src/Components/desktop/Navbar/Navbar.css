@@ -5,7 +5,7 @@
   align-items: center;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #333;
+  /* background-color: #333; */
   position: fixed;  /* Changed to fixed */
   top: 0;  /* Ensure it stays at the top */
   /* background-color: pink; */

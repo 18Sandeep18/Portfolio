@@ -8,8 +8,7 @@
   justify-content: center;
   padding: 2rem;
   backdrop-filter: blur(10px);
-  
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(0, 22, 50, 0.6));
+  background: linear-gradient(135deg, rgba(2, 2, 2, 0.911), rgba(12, 80, 112, 0.966));
   -webkit-backdrop-filter: blur(10px);
 }
 #title{
@@ -25,10 +24,9 @@
   max-height: fit-content;
   gap: 3rem;
   flex-wrap: wrap;
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
+  /* backdrop-filter: blur(15px); */
+  /* -webkit-backdrop-filter: blur(15px); */
   border-radius: 16px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
 }
 
 .contact-form {

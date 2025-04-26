@@ -146,6 +146,9 @@ const Projects = () => {
           </div>
         </div>
       </div>
+        <div className="page-intro">
+    Here’s a collection of projects I've built during my learning and professional journey. They cover a wide range of technologies, from Artificial Intelligence and Machine Learning (AI/ML) to full-stack development with the MERN stack, and JavaScript-based applications. Each project helped me dive deeper into problem-solving, coding best practices, and real-world application building. Feel free to explore!
+  </div>
     </div>
   );
 };

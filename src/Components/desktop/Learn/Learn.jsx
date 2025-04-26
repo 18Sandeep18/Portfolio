@@ -104,6 +104,9 @@ const Learn = () => {
                                     </div>
                                 ))}
                             </div>
+                            <p className="books-description">
+        These notes were personally prepared by me during my coding journey. As I tackled countless problems, I made it a habit to document important patterns, tricks, and approaches. I believe these notes can really help you build strong problem-solving skills and save you tons of time.
+    </p>
                         </div>
                     ) : (
                         // Topics List Layout

@@ -14,7 +14,7 @@ const About = () => {
           <div className="abt-main-content">
             {activeSection === 'skills' && (
               <div className="section skills">
-                <h1>Skills</h1>
+                
                 <div className="skills-grid">
                   <div className="skill-item">
                     <div className="skill-name">Java</div>
@@ -36,6 +36,48 @@ const About = () => {
                       <div className="skill-percentage" style={{ width: '70%' }}></div>
                     </div>
                     <div className="skill-percent-text">70%</div>
+                  </div>
+                  <div className="skill-item">
+                    <div className="skill-name">CSS</div>
+                    <div className="skill-bar">
+                      <div className="skill-percentage" style={{ width: '75%' }}></div>
+                    </div>
+                    <div className="skill-percent-text">75%</div>
+                  </div>
+                  <div className="skill-item">
+                    <div className="skill-name">CSS</div>
+                    <div className="skill-bar">
+                      <div className="skill-percentage" style={{ width: '75%' }}></div>
+                    </div>
+                    <div className="skill-percent-text">75%</div>
+                  </div>
+                  <div className="skill-item">
+                    <div className="skill-name">CSS</div>
+                    <div className="skill-bar">
+                      <div className="skill-percentage" style={{ width: '75%' }}></div>
+                    </div>
+                    <div className="skill-percent-text">75%</div>
+                  </div>
+                  <div className="skill-item">
+                    <div className="skill-name">CSS</div>
+                    <div className="skill-bar">
+                      <div className="skill-percentage" style={{ width: '75%' }}></div>
+                    </div>
+                    <div className="skill-percent-text">75%</div>
+                  </div>
+                  <div className="skill-item">
+                    <div className="skill-name">CSS</div>
+                    <div className="skill-bar">
+                      <div className="skill-percentage" style={{ width: '75%' }}></div>
+                    </div>
+                    <div className="skill-percent-text">75%</div>
+                  </div>
+                  <div className="skill-item">
+                    <div className="skill-name">CSS</div>
+                    <div className="skill-bar">
+                      <div className="skill-percentage" style={{ width: '75%' }}></div>
+                    </div>
+                    <div className="skill-percent-text">75%</div>
                   </div>
                   <div className="skill-item">
                     <div className="skill-name">CSS</div>
@@ -127,6 +169,26 @@ const About = () => {
                   <div className="certification-item">
                     <h3>IntrainTech AIML</h3>
                     <p>Description of certification 3.</p>
+                    <button className="view-certificate">View Certificate</button>
+                  </div>
+                  <div className="certification-item">
+                    <h3>Certification Title 4</h3>
+                    <p>Description of certification 4.</p>
+                    <button className="view-certificate">View Certificate</button>
+                  </div>
+                  <div className="certification-item">
+                    <h3>Certification Title 4</h3>
+                    <p>Description of certification 4.</p>
+                    <button className="view-certificate">View Certificate</button>
+                  </div>
+                  <div className="certification-item">
+                    <h3>Certification Title 4</h3>
+                    <p>Description of certification 4.</p>
+                    <button className="view-certificate">View Certificate</button>
+                  </div>
+                  <div className="certification-item">
+                    <h3>Certification Title 4</h3>
+                    <p>Description of certification 4.</p>
                     <button className="view-certificate">View Certificate</button>
                   </div>
                   <div className="certification-item">
