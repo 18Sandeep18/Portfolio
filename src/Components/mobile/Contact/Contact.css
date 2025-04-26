@@ -83,8 +83,8 @@
 }
 
 .social-media {
-  width: 100%;
-  max-width: 400px;
+  width: 80%;
+  max-width: 300px;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -94,6 +94,7 @@
   background: rgba(255, 255, 255, 0.1);
   border-radius: 16px;
   padding: 2rem;
+  max-width: fit-content;
   width: fit-content;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
