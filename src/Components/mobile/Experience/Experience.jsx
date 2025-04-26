@@ -6,14 +6,16 @@ import img3 from '../../../assets/Car.jpg';
 import img4 from '../../../assets/Product.png';
 import img5 from '../../../assets/chatbot.avif';
 import img6 from '../../../assets/Fetus.jpg';
+
 const projects = [
   {
-    name: 'Pneuemonia Detection Using CNN',
-    title: 'Pneumonia detection using CNN',
+    name: 'Pneumonia Detection Using CNN',
+    title: 'Pneumonia Detection Using CNN',
     description: 'Pneumonia detection using Convolutional Neural Networks (CNN) involves training a deep learning model to accurately identify pneumonia from chest X-ray images. This project utilizes image preprocessing and data augmentation techniques to enhance the training process.',
     image: img1,
     liveDemo: 'http://livedemo1.com',
     github: 'https://github.com/18Sandeep18/DL-Pneumonia-Detection-using-CNN.git',
+    techStack: ['Python', 'TensorFlow', 'Keras', 'Deep Learning'],
   },
   {
     name: 'Fetal Health Detection Using AI',
@@ -22,6 +24,7 @@ const projects = [
     image: img6,
     liveDemo: 'https://fetal-ai.onrender.com/',
     github: 'https://github.com/18Sandeep18/Fetal-AI.git',
+    techStack: ['Python', 'Random Forest', 'Flask', 'Render'],
   },
   {
     name: 'Study Partner',
@@ -30,6 +33,7 @@ const projects = [
     image: img4,
     liveDemo: 'https://studypartner-sandeep-mern.vercel.app/',
     github: 'https://github.com/18Sandeep18/StudyPartner-MERN01.git',
+    techStack: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Tailwind CSS', 'Firebase'],
   },
   {
     name: 'Roll the Dice',
@@ -38,6 +42,7 @@ const projects = [
     image: img2,
     liveDemo: 'https://dice-roll-new.vercel.app/',
     github: 'https://github.com/18Sandeep18/DiceRoll-New.git',
+    techStack: ['HTML', 'CSS', 'JavaScript'],
   },
   {
     name: 'Car Price Prediction',
@@ -46,6 +51,7 @@ const projects = [
     image: img3,
     liveDemo: 'https://car-price-prediction-2-hrm7.onrender.com/',
     github: 'https://github.com/18Sandeep18/car-price-prediction.git',
+    techStack: ['Python', 'Machine Learning', 'Scikit-Learn', 'Flask'],
   },
   {
     name: 'E-commerce Website',
@@ -54,6 +60,7 @@ const projects = [
     image: img4,
     liveDemo: 'https://mern-app-2.vercel.app/',
     github: 'https://github.com/18Sandeep18/MERN-APP2.git',
+    techStack: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Redux', 'Stripe'],
   },
   {
     name: 'ChatBot',
@@ -62,6 +69,7 @@ const projects = [
     image: img5,
     liveDemo: 'http://livedemo3.com',
     github: 'http://github3.com',
+    techStack: ['Python', 'NLP', 'Machine Learning', 'Flask'],
   },
 ];
 
@@ -86,11 +94,23 @@ const Projects = () => {
 
         <div className="experience-content">
           <h3>{projects[current].title}</h3>
-          <img src={projects[current].image} alt={projects[current].name} />
+          <img src={projects[current].image} alt={projects[current].name} className="project-image" />
           <p>{projects[current].description}</p>
+
+          {/* Tech Stack Badges */}
+          <div className="tech-stack">
+            {projects[current].techStack.map((tech, idx) => (
+              <span key={idx} className="tech-badge">{tech}</span>
+            ))}
+          </div>
+
           <div className="experience-buttons">
-            <a href={projects[current].github} target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href={projects[current].liveDemo} target="_blank" rel="noopener noreferrer">Live Demo</a>
+            <a href={projects[current].github} target="_blank" rel="noopener noreferrer" className="btn">
+              GitHub
+            </a>
+            <a href={projects[current].liveDemo} target="_blank" rel="noopener noreferrer" className="btn">
+              Live Demo
+            </a>
           </div>
         </div>
 

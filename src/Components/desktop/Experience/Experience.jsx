@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import './Experience.css';
-// import im from '../../assets/Product.png';
 import img1 from '../../../assets/p1.webp';
 import img2 from '../../../assets/Roll.jpg';
 import img3 from '../../../assets/Car.jpg';
@@ -10,60 +9,67 @@ import img6 from '../../../assets/Fetus.jpg';
 
 const projects = [
   {
-    name: 'Pneuemonia Detection Using CNN',
-    title: 'Pneuemonia Detection Using CNN',
-    description: 'Pneumonia detection using Convolutional Neural Networks (CNN) involves training a deep learning model to accurately identify pneumonia from chest X-ray images. This project utilizes image preprocessing and data augmentation techniques to enhance the training process.',
+    name: 'Pneumonia Detection Using CNN',
+    title: 'Pneumonia Detection Using CNN',
+    description: 'Built a deep learning model using CNN to detect pneumonia from chest X-ray images with high accuracy. Implemented preprocessing, data augmentation, and Grad-CAM for model interpretability. Deployed a web app for real-time X-ray image predictions.',
     image: img1,
     liveDemo: 'http://livedemo1.com',
     github: 'https://github.com/18Sandeep18/DL-Pneumonia-Detection-using-CNN.git',
+    techStack: ['Python', 'TensorFlow', 'Keras', 'CNN', 'Deep Learning'],
   },
   {
     name: 'Fetal Health Detection Using AI',
     title: 'Fetal Health Detection Using AI',
-    description: 'Pneumonia detection using Convolutional Neural Networks (CNN) involves training a deep learning model to accurately identify pneumonia from chest X-ray images. This project utilizes image preprocessing and data augmentation techniques to enhance the training process.',
+    description: 'Developed a machine learning model to predict fetal health conditions from CTG data. Achieved high accuracy using Random Forest, Decision Tree, and KNN classifiers. Created a web interface for easy predictions and data visualization.',
     image: img6,
     liveDemo: 'https://fetal-ai.onrender.com/',
     github: 'https://github.com/18Sandeep18/Fetal-AI.git',
+    techStack: ['Python', 'Random Forest', 'Flask', 'Render'],
   },
   {
     name: 'Study Partner',
     title: 'Task Manager using MERN stack',
-    description: 'Implemented Complete CRUD operations with highly secure authentication using JWT, and incorporated many tools such as tailwind css, firebase',
+    description: 'Designed a full-stack MERN application to manage academic tasks with authentication and CRUD operations. Integrated secure JWT-based login, TailwindCSS UI, and Firebase notifications. Users can track, update, and prioritize their learning goals.',
     image: img4,
     liveDemo: 'https://studypartner-sandeep-mern.vercel.app/',
     github: 'https://github.com/18Sandeep18/StudyPartner-MERN01.git',
+    techStack: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Tailwind CSS', 'JWT', 'Firebase'],
   },
   {
     name: 'Roll the dice',
     title: 'Roll the dice',
-    description: 'Roll the Dice project, is an interactive web game created using HTML, CSS, and JavaScript, allowing users to roll virtual dice and play according to my rules displayed dynamically. This fun and engaging project showcases the use of basic web development skills to create a simple yet enjoyable user experience.',
+    description: 'Built an interactive dice-rolling web game using vanilla HTML, CSS, and JavaScript.Users can roll dice dynamically and enjoy a rule-based mini-game experience.Focused on simple animations and clean UI/UX for fun engagement.',
     image: img2,
     liveDemo: 'https://dice-roll-new.vercel.app/',
     github: 'https://github.com/18Sandeep18/DiceRoll-New.git',
+    techStack: ['HTML', 'CSS', 'JavaScript'],
   },
   {
     name: 'Car Price Prediction',
     title: 'Car Price Prediction',
-    description: 'The Car Price Prediction project utilizes machine learning algorithms to analyze and predict the prices of cars based on various features such as make, model, year, and mileage. This project demonstrates the application of data science techniques to provide valuable insights and accurate pricing estimates in the automotive industry.',
+    description: 'Created a machine learning model to predict car prices based on features like brand, year, and mileage.Performed feature engineering, model training, and hyperparameter tuning.Deployed an easy-to-use web app for quick price estimation.',
     image: img3,
     liveDemo: 'https://car-price-prediction-2-hrm7.onrender.com/',
     github: 'https://github.com/18Sandeep18/car-price-prediction.git',
+    techStack: ['Python', 'Machine Learning', 'Scikit-Learn', 'Flask'],
   },
   {
     name: 'E-commerce Website',
     title: 'E-commerce Website',
-    description: 'Developing a full-featured e-commerce website using the MERN stack,  Consists of Mongo DB, Express JS, React JS, Node JS encompassing product listings, user authentication, and secure payment integration. Implementing a responsive design for seamless user experience across devices. Demonstrated expertise in end-to-end application development and deployment',
+    description: 'Developed a responsive, full-fledged e-commerce platform using the MERN stack.Included user authentication, product management, and Stripe payment integration.Focused on seamless user experience and secure transactions.',
     image: img4,
     liveDemo: 'https://mern-app-2.vercel.app/',
     github: 'https://github.com/18Sandeep18/MERN-APP2.git',
+    techStack: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Redux', 'Stripe'],
   },
   {
     name: 'ChatBot',
     title: 'ChatBot',
-    description: 'The Car Price Prediction project utilizes machine learning algorithms to analyze and predict the prices of cars based on various features such as make, model, year, and mileage. This project demonstrates the application of data science techniques to provide valuable insights and accurate pricing estimates in the automotive industry.',
+    description: 'Built an AI-powered chatbot capable of responding to user queries in real-time.Trained on diverse datasets to understand and reply in conversational language.Deployed a lightweight web application for interactive chat.',
     image: img5,
     liveDemo: 'http://livedemo3.com',
     github: 'http://github3.com',
+    techStack: ['Python', 'NLP', 'Machine Learning', 'Flask'],
   },
 ];
 
@@ -71,39 +77,32 @@ const Projects = () => {
   const [activeProject, setActiveProject] = useState(projects[0]);
 
   useEffect(() => {
-    const buttons = document.querySelectorAll('.sidebar button');
-    const mobile = window.minWidth <= 700
-    buttons.forEach((button, index) => {
-      if (mobile && index !== 0 && index !== buttons.length - 1) {
+    const buttons = document.querySelectorAll('.exsidebar button');
+    const mobile = window.innerWidth <= 700;
+    
+    if (mobile) {
+      buttons.forEach((button) => {
         button.addEventListener('click', function () {
-          this.scrollIntoView({
-            behavior: 'smooth',
-            block: 'center',
-            inline: 'center'
+          this.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });
+        });
+      });
+    }
+
+    return () => {
+      if (mobile) {
+        buttons.forEach((button) => {
+          button.removeEventListener('click', function () {
+            this.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });
           });
         });
       }
-    });
-
-    return () => {
-      buttons.forEach((button, index) => {
-        if (index !== 0 && index !== buttons.length - 1) {
-          button.removeEventListener('click', function () {
-            this.scrollIntoView({
-              behavior: 'smooth',
-              block: 'center',
-              inline: 'center'
-            });
-          });
-        }
-      });
     };
-  }, [activeProject]);
+  }, []);
 
   return (
-    <div id="experience" className="ex-projects">
+    <section id="experience" className="ex-projects">
       <div className="container">
-        <div className="exsidebar">
+        <aside className="exsidebar">
           {projects.map((project, index) => (
             <button
               key={index}
@@ -113,43 +112,41 @@ const Projects = () => {
               {project.name}
             </button>
           ))}
-        </div>
-        <div className="main-content">
-          <div className="project-description">
-            <div className="description-title">{activeProject.title}</div>
-            <div className="sub-pro">
-              <div className="description-image">
-                <img src={activeProject.image} alt="Project Image" />
+        </aside>
+
+        <main className="main-content">
+          <h2 className="description-title">{activeProject.title}</h2>
+          <div className="sub-pro">
+            <img src={activeProject.image} alt={activeProject.title} className="description-image" />
+            <div className="description-text">
+              <p>{activeProject.description}</p>
+
+              {/* Tech Stack Badges */}
+              <div className="tech-stack">
+                {activeProject.techStack.map((tech, idx) => (
+                  <span key={idx} className="tech-badge">
+                    {tech}
+                  </span>
+                ))}
               </div>
-              <div className="description-text">
-                <p>{activeProject.description}</p>
-                <div className="buttons">
-                  <a
-                    href={activeProject.github}
-                    className="btn"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    GitHub
-                  </a>
-                  <a
-                    href={activeProject.liveDemo}
-                    className="btn"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Live Demo
-                  </a>
-                </div>
+
+              <div className="buttons">
+                <a href={activeProject.github} className="btn" target="_blank" rel="noopener noreferrer">
+                  GitHub
+                </a>
+                <a href={activeProject.liveDemo} className="btn" target="_blank" rel="noopener noreferrer">
+                  Live Demo
+                </a>
               </div>
             </div>
           </div>
-        </div>
+        </main>
       </div>
-        <div className="page-intro">
-    Here’s a collection of projects I've built during my learning and professional journey. They cover a wide range of technologies, from Artificial Intelligence and Machine Learning (AI/ML) to full-stack development with the MERN stack, and JavaScript-based applications. Each project helped me dive deeper into problem-solving, coding best practices, and real-world application building. Feel free to explore!
-  </div>
-    </div>
+
+      <p className="page-intro">
+        Here’s a collection of projects I've built across AI/ML, full-stack development, and creative web apps. Each one helped me dive deeper into coding, problem-solving, and real-world application building. Feel free to explore!
+      </p>
+    </section>
   );
 };
 

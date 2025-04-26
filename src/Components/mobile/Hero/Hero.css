@@ -21,6 +21,26 @@
   transition: all 0.3s ease;
 }
 
+.name-title {
+  font-size: 3.2rem;
+  margin-bottom: 10px;
+  animation: fadeInSlide 2s ease-in-out forwards;
+  opacity: 0; /* Start invisible, then appear */
+}
+
+/* Keyframes for animation */
+@keyframes fadeInSlide {
+  0% {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
 /* Profile Image */
 .profile-img {
   width: 9rem;

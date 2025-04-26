@@ -9,7 +9,7 @@
   overflow-x: hidden;
   color: #e0e0e0;
   backdrop-filter: blur(10px);
-  background: linear-gradient(135deg, rgba(2, 2, 2, 0.911), rgba(12, 80, 112, 0.966));
+  background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
   -webkit-backdrop-filter: blur(10px);
 }
 

@@ -28,9 +28,8 @@
   justify-content: space-between;
   gap: 1rem;
   width: 100%;
-  
-  max-width: 400px;
-  min-height: 400px;
+  /* background-color: red; */
+  min-height: 600px;
 }
 
 /* Arrows */
@@ -53,7 +52,7 @@
   padding: 1rem;
   border-radius: 16px;
   width: 100%;
-  min-height: 450px;
+  min-height: 600px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
@@ -91,6 +90,9 @@
   display: flex;
   gap: 0.5rem;
   justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+
 }
 
 /* Individual Button */
