@@ -1,8 +1,8 @@
 import React from 'react';
 import './Hero.css';
 import { unstable_HistoryRouter } from 'react-router-dom';
-import profilePic from '../../assets/profile.png'; // update with the correct path to your image
-import resume from '../../assets/Resume.pdf'; // update with the correct path to your resume
+import profilePic from 'D:/TECH _PROJECTS/Portfolio-1/src/assets/profile.png'; // update with the correct path to your image
+import resume from 'D:/TECH _PROJECTS/Portfolio-1/src/assets/Resume.pdf'; // update with the correct path to your resume
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 const Home = () => {
 

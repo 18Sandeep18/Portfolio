@@ -1,10 +1,10 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
 import './Contact.css';
-import github from '../../assets/github-sign.png';
-import twitter from '../../assets/twitter.png';
-import linkedin from '../../assets/linkedin.png';
-import leetcode from '../../assets/leetcode.png';
+import github from 'D:/TECH _PROJECTS/Portfolio-1/src/assets/github-sign.png';
+import twitter from 'D:/TECH _PROJECTS/Portfolio-1/src/assets//twitter.png';
+import linkedin from 'D:/TECH _PROJECTS/Portfolio-1/src/assets//linkedin.png';
+import leetcode from 'D:/TECH _PROJECTS/Portfolio-1/src/assets//leetcode.png';
 
 const Contact = () => {
   const sendEmail = (e) => {

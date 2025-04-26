@@ -1,28 +1,34 @@
 import React from 'react'
 
-import Navbar from './Components/Navbar/Navbar'
-import Hero from './Components/Hero/Hero'
-import About from './Components/About/About'
-import Experience from './Components/Experience/Experience'
-import Contact from './Components/Contact/Contact'
-import Footer from './Components/Footer/Footer'
+import Navbar from './Components/desktop/Navbar/Navbar'
+import Hero from './Components/desktop/Hero/Hero'
+import About from './Components/desktop/About/About'
+import Experience from './Components/desktop/Experience/Experience'
+import Contact from './Components/desktop/Contact/Contact'
+import Footer from './Components/desktop/Footer/Footer'
 import { BrowserRouter as Router } from 'react-router-dom'
-import Learn from './Components/Learn/Learn'
+import Learn from './Components/desktop/Learn/Learn'
 
+import MobileLayout from './Components/mobile/MobileLayout'; 
 
-
+import useIsMobile from './hooks/useIsMobile'
 const App = () => {
+  const isMobile = useIsMobile();
   return (
     <Router basename="/">
-      <div>
-        <Navbar />
-        <Hero />
-        <About />
-        <Experience />
-        <Learn />
-        <Contact />
-        <Footer />
-      </div>
+      {isMobile ? (
+        <MobileLayout />
+      ) : (
+        <div>
+          <Navbar />
+          <Hero />
+          <About />
+          <Experience />
+          <Learn />
+          <Contact />
+          <Footer />
+        </div>  
+      )}
     </Router>
   )
 }

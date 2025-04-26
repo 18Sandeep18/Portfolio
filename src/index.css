@@ -14,7 +14,7 @@ body {
 }
 @media (max-width: 768px) {
   body{
-    width: 60vw  ;
+    /* width: 60vw  ; */
     /* background-color: violet; */
   }
 }

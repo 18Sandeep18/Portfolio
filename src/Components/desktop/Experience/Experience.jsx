@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import './Experience.css';
-import im from '../../assets/Product.png';
-import img1 from '../../assets/p1.webp';
-import img2 from '../../assets/Roll.jpg';
-import img3 from '../../assets/Car.jpg';
-import img4 from '../../assets/Product.png';
-import img5 from '../../assets/chatbot.avif';
-import img6 from '../../assets/Fetus.jpg';
+// import im from '../../assets/Product.png';
+import img1 from 'D:/TECH _PROJECTS/Portfolio-1/src/assets/p1.webp';
+import img2 from 'D:/TECH _PROJECTS/Portfolio-1/src/assets/Roll.jpg';
+import img3 from 'D:/TECH _PROJECTS/Portfolio-1/src/assets/Car.jpg';
+import img4 from 'D:/TECH _PROJECTS/Portfolio-1/src/assets/Product.png';
+import img5 from 'D:/TECH _PROJECTS/Portfolio-1/src/assets/chatbot.avif';
+import img6 from 'D:/TECH _PROJECTS/Portfolio-1/src/assets/Fetus.jpg';
 
 const projects = [
   {
