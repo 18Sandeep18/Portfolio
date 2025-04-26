@@ -1,13 +1,21 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import './About.css'; // we'll also upgrade css
+import './About.css';
 
 const skills = [
-  { name: 'Python', percentage: 90, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
+  // Languages
+  { name: 'Java', percentage: 87, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg' },
+  { name: 'Python', percentage: 85, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
+  { name: 'DSA', percentage: 90, icon: 'https://cdn-icons-png.flaticon.com/512/9431/9431139.png' },
+
+  // Frameworks
+  { name: 'React.js', percentage: 75, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+  { name: 'Node.js', percentage: 75, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
   { name: 'Machine Learning', percentage: 85, icon: 'https://cdn-icons-png.flaticon.com/512/5439/5439444.png' },
   { name: 'Deep Learning', percentage: 80, icon: 'https://cdn-icons-png.flaticon.com/512/4149/4149640.png' },
-  { name: 'React.js', percentage: 88, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
-  { name: 'Node.js', percentage: 82, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
+  // Databases
+  { name: 'SQL', percentage: 85, icon: 'https://cdn-icons-png.flaticon.com/512/2772/2772128.png' },
+  { name: 'MongoDB', percentage: 80, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg' },
 ];
 
 const About = () => {
@@ -54,6 +62,7 @@ const About = () => {
             </ul>
           </div>
         );
+
       case 'education':
       default:
         return (
@@ -62,7 +71,7 @@ const About = () => {
             <ul>
               <li>Vellore Institute of Technology</li>
               <li>Graduation Year: 2025</li>
-              <li>CGPA: 8.75</li>
+              <li>CGPA: 8.76</li>
             </ul>
             <h3>Secondary Education:</h3>
             <ul>

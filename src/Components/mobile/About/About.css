@@ -43,8 +43,8 @@ body.light-mode  .about-section h2{
 
 /* Button styles */
 .tab-button {
-  width: 140px;
-  height: 50px;
+  width: 100%;
+  padding: 1rem;
   background: rgba(255, 255, 255, 0.1);
   
   border: none;
@@ -84,6 +84,7 @@ body.light-mode .tab-button{
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.2);
+  scrollbar-width: none;
 }
 
 /* Inside Content */
@@ -107,5 +108,19 @@ body.light-mode .content-box ul{
 
 .content-box li {
   margin-bottom: 0.5rem;
+}
+/* Resize Icons or Images */
+.content-box img {
+  width: 80%; /* Adjust the image size to be smaller for mobile */
+  max-width: 300px; /* Maximum width to avoid too large images */
+  height: auto;
+  object-fit: contain; /* Preserve aspect ratio */
+}
+
+.about-section img {
+  width: 60%; /* Resize images inside the about-section */
+  max-width: 250px; /* Set a max size to maintain consistency */
+  height: auto;
+  object-fit: contain;
 }
 
