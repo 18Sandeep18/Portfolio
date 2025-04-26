@@ -1,6 +1,6 @@
 import React from 'react';
 import './Hero.css'; // Link the CSS
-import profile from 'D:/TECH _PROJECTS/Portfolio-1/src/assets/profile.png'; // Your image path
+import profile from '../../../assets/profile.png'; // Your image path
 
 const Home = () => {
   return (

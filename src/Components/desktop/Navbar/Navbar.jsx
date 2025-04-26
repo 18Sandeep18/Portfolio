@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css';
-import logo from 'D:/TECH _PROJECTS/Portfolio-1/src/assets/logoo.png';
+import logo from '../../../assets/logoo.png';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const Navbar = () => {
