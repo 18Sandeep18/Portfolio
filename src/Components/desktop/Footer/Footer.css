@@ -44,10 +44,3 @@
 .footer-links a:hover {
   color: #aaa;
 }
-
-@media (max-width: 768px) {
-  .footer {
-    width: 100vw;
-    
-  }
-}

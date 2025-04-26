@@ -1,7 +1,7 @@
 /* === About Section === */
 .about {
   height: 100vh;
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -182,76 +182,4 @@
 
 .view-certificate:hover {
   background-color: #438fc9;
-}
-
-/* === Responsive Design === */
-@media (max-width: 768px) {
-  .about {
-    flex-direction: column;
-    height: auto;
-    width: 100vw;
-  }
-
-  .abt-sidebar {
-    flex-direction: row;
-    gap: 0.5rem;
-    width: 100%;
-   
-  }
-
-  .abt-sidebar button {
-    font-size: 0.1rem;
-    padding: 0.5rem;
-  }
-
-  .abt-main-content {
-    margin-right: 1rem;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .abt-main-content h1 {
-    font-size: 0.5rem;
-  }
-
-  .skills-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    margin-right: 1rem;
-  }
-
-  .skill-item {
-    height: auto;
-    /* padding: 0.8rem; */
-  }
-
-  .skill-name {
-    font-size: 0.8rem;
-    color: #7df9ff;
-  }
-
-  .skill-bar {
-    height: 6px;
-  }
-
-  .skill-percent-text {
-    font-size: 0.7rem;
-  }
-
-  .certification-item {
-    width: 70%;
-
-  }
-
-  .certification-item h3 {
-    font-size: 0.2rem;
-  }
-
-  .certification-item p {
-    font-size: 0.1rem;
-  }
-
-  .view-certificate {
-    font-size: xx-small;
-  }
 }

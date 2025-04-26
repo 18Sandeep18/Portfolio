@@ -2,15 +2,17 @@
   margin: 0;
   padding: 0;
 }
-:root {
+/* :root {
   /* Default values (DARK MODE values) */
   /* don't touch your current dark colors */
-}
+
 /* DARK MODE (default) */
 body {
+  overflow-x: hidden;
   /* background-color: #0e0e0e;  */
   color: #ffffff; /* white text */
   transition: background-color 0.5s, color 0.5s;
+ 
 }
 
 /* LIGHT MODE */

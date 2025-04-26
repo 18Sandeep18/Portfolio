@@ -7,12 +7,12 @@
     flex-wrap: wrap;
     gap: 2rem;
     min-height: 50%;
+    width: 100%;
     text-align: center;
+}
 
-  }
-  
-  /* Experience Section */
-  #experience {
+/* Experience Section */
+#experience {
     display: flex;
     height: 100vh;
     flex-direction: column;
@@ -21,167 +21,163 @@
     background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     padding: 4rem 2rem;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
-  }
-  
-  /* Intro Styling */
-  .page-intro {
-    font-size: 1.2rem;
+}
+
+/* Intro Styling */
+.page-intro {
+    font-size: 1rem; /* reduced from 1.2rem */
     color: #ccc;
     max-width: 900px;
     margin: 2rem auto 0;
-    line-height: 1.6;
+    line-height: 1.5;
     text-align: center;
-  }
-  
-  /* Sidebar Styling */
-  .exsidebar {
+}
+
+/* Sidebar Styling */
+
+.exsidebar {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    max-height: 20vh;
     width: 20%;
-  }
-  
-  .exsidebar::-webkit-scrollbar {
+    max-height: 25vh; /* Height relative to screen, so scroll works properly */
+    overflow-y: auto;
+    scrollbar-width: none;
+    padding: 1rem 0;
+}
+
+/* Hide scrollbar Chrome/Safari */
+.exsidebar::-webkit-scrollbar {
     display: none;
-  }
-  
-  .exsidebar button {
+}
+
+
+.exsidebar button {
     width: 100%;
     padding: 1rem;
     background: #2c2c2c;
     color: #eee;
-    font-size: 1.05rem;
+    font-size: 0.95rem; /* reduced from 1.05rem */
     border: none;
     border-radius: 20px;
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .exsidebar button.active {
+}
+
+.exsidebar button.active {
     background: #7CB9E8;
     color: #fff;
-  }
-  
-  .exsidebar button:hover {
+}
+
+.exsidebar button:hover {
     transform: translateY(-3px) scale(1.05);
     background-color: #3a3a3a;
-  }
-  
-  /* Main Content Styling */
-  .main-content {
+}
+
+/* Main Content Styling */
+.main-content {
     flex: 1;
     max-width: 900px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    padding: 1rem;
-  }
-  
-  /* Project Card Styling */
-  .main-content {
+    padding: 2rem;
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(8px);
     border-radius: 16px;
-    padding: 2rem;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
     width: 100%;
     min-height: 50vh;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    /* background-color: red; */
-  }
-  
-  /* Title Styling */
-  .description-title {
-    font-size: 2.5rem;
+}
+
+/* Title Styling */
+.description-title {
+    font-size: 2rem; /* reduced from 2.5rem */
     font-weight: bold;
     color: #7CB9E8;
     text-align: center;
-  }
-  
-  /* Sub Section inside Card */
-  .sub-pro {
+}
+
+/* Sub Section inside Card */
+.sub-pro {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3rem;
     flex-wrap: wrap;
     width: 100%;
-  }
-  
-  /* Image Styling */
-  .description-image {
+}
+
+/* Image Styling */
+.description-image {
     width: 300px;
     min-width: 200px;
     border-radius: 12px;
     overflow: hidden;
-  }
-  
-  .description-image img {
+}
+
+.description-image img {
     width: 100%;
     height: auto;
     border-radius: 12px;
     object-fit: cover;
-  }
-  
-  /* Text Section */
-  .description-text {
+}
+
+/* Text Section */
+.description-text {
     flex: 1;
-    font-size: 1.15rem;
+    font-size: 1rem; /* reduced from 1.15rem */
     color: #ddd;
-    line-height: 1.6;
+    line-height: 1.5;
     text-align: center;
-  }
-  
-  /* Tech Stack Badges */
-  .tech-stack {
+}
+
+/* Tech Stack Badges */
+.tech-stack {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 8px;
     margin-top: 1rem;
-  }
-  
-  .tech-badge {
+}
+
+.tech-badge {
     background: rgba(225, 228, 231, 0.568);
     color: #050505;
     padding: 6px 12px;
     border-radius: 20px;
-    font-size: 0.9rem;
+    font-size: 0.8rem; /* reduced from 0.9rem */
     font-weight: 500;
     backdrop-filter: blur(4px);
-  }
-  
-  /* Buttons */
-  .buttons {
+}
+
+/* Buttons */
+.buttons {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
     margin-top: 1.5rem;
     flex-wrap: wrap;
-  }
-  
-  .btn {
-    padding: 0.9rem 1.8rem;
+}
+
+.btn {
+    padding: 0.8rem 1.6rem;
     background: #7CB9E8;
     color: white;
-    font-size: 1rem;
+    font-size: 0.95rem; /* reduced from 1rem */
     border-radius: 30px;
     border: none;
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
     text-decoration: none;
-  }
-  
-  .btn:hover {
+}
+
+.btn:hover {
     background: #5ea8d8;
     transform: translateY(-4px) scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-  }
-  
+}
